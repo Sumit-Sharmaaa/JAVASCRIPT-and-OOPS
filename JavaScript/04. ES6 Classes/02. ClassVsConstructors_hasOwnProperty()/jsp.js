@@ -66,7 +66,7 @@ function Vehicle2(name, color, wheels){
 
 const car2 = new Vehicle2('Car','blue',4);
 car2.getDetails2();
-console.log(car2.hasOwnProperty('getDetails2')); // will return true as it is inside constructor
+console.log(car2.hasOwnProperty('getDetails2')); // will return false as it is outside constructor
 
 
 

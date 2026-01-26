@@ -11,9 +11,9 @@ We have already seen and used Inheritance and Polymorphism in some of our eg whi
 Now, we'll see the the Rest.
 
 * Classes in JS -> 
-Earlier in initial version of JS there was no concept of classes and objects are 
-created using Constructors and object Literals, but later it was introduced to make it sync with other
-programming Languages but, it JS classes actually doesnt work like how it works in other programming Languages.
+Earlier in initial version of JS there was no concept of classes, and objects were created using Constructors
+and object Literals, but later it was introduced to make it sync with other programming Languages but,
+in JS classes actually doesnt work like how it works in other programming Languages.
 
 So classes in js is basically syntactic Sugar over Constructor Function.
-Everything works same liek prototypal inheritance, scope etc. only the creation part is changed
+Everything works same like prototypal inheritance, scope etc. only the creation part is changed

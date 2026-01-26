@@ -31,7 +31,7 @@ class VehicleClass{
     wheels;
     //These above properties are not declarion it is just mentioning for better practices & can be skipped
 
-    constructor(name,color,wheels){ // constructor keyword in used
+    constructor(name,color,wheels){ // constructor keyword is used
         this.color=color;
         this.name=name;
         this.wheels=wheels;
