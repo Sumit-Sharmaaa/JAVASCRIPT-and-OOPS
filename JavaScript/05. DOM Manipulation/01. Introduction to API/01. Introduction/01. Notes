@@ -1,0 +1,82 @@
+API's - Application Programming Interface
+There are two types of API's 
+1. Web Browser  - Built in browsers
+2. Third Party API
+
+Say if I want to use Navigation, then instead of writing the whole Maps Navigation code, I can use the
+Google Maps API.
+Similarly there are Music API's, twitter API's and so many third party API's.
+
+But we will read about Browsers API's more here in manipulating WebPages and Data.
+
+Console.log() itself is an API which we use in JavaScript.
+
+So, Now Browser API which we will be learning is DOM i.e. Document Object Model which is extensively used.
+Similarly there are Auidio API, Vedio API
+They are present under Window Object 
+
+// Whai is DOM?
+
+1. HTML code is also a document, So Document Object Model is the representation of HTML inside JS as nodes and objects.
+2. In HTML the tags are represented as Nodes and objects in JS, so that we can access these elements and then manipulate it using the scripting language like JS.
+
+Eg : -
+HTML CODE - 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+ <body>
+    <h1 class = 'first'>DOM</h1>
+    <p id="para">Lets learn more about DOM Manipulation</p>
+    <div>
+        <h3>Inner Heading</h3>
+    </div>
+ </body>
+</html>
+
+So DOM Tree of Above HTML COde is:-
+
+    DOCUMENT
+        |
+    ___HTML____
+   |           |
+Head           Body                 -----> DOM Tree of corresponding HTM
+  |             |                   -----> Here every Element will be represented as Node or Object, for  
+Title       ____|____                       Manipulation using scripting langiage whenever reqd.        
+           |    |    |
+          H1    p    DIV
+                      | 
+                      H3
+
+Now go on Console of above HTML Code:-
+windows.document --> This will return the complete HTML
+
+document.childNodes --> will return the childs of document i.e. <!DOCTYPE html>,<html>
+
+document.children --> will return HTMLCollection i.e all Nodes in Document
+
+document.body --> will retrun the body of document.
+
+document.body.ChildNodes
+--> This will return all the child nodes in body but here if we have spaces or text bw elements then after that element it will give text, And it also gives the id and class along with elements to which it is applied.
+Above eg - [text,h1.first, text, p#para, text, div, text, commemnt, text, script, text]
+
+document.body.children
+-->HTMLCollection i.e. all elements inside body (will ignore text or spaces)
+Above Eg - HTMLCollection(4) [h1.first, p#para , div, script, para:p#para]
+
+document.body.firstChild
+--> #text (gives from ChildNodes)
+
+document.body.firstElementChild
+--> <h1 class = "first"> DOM </h1>
+
+But this way is long way to access Elements using Nodes, Better way is to use Selectors
+
+// DOM Selectors
+Note:- We can write this Code quries anywhere i.e. in HTML code or JS code but inside script Tag or directly on console.
+Refer-> 02. index.html 
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
+ <body>
+    <h1 class ="first">DOM1</h1>
+    <h1 class ="second">DOM2</h1>
+    <p id="para">Lets learn more about DOM Manipulation</p>
+    <div>
+        <h3>Inner Heading</h3>
+    </div>
+
+<script>  // USe it just before body ends so that it can access everything in body
+
+// Script tag can be added in head and body of the HTML.
+// But if we have added this script tag in head and try to access body elements then it would give null.
+// So better practice is to always use it just before body ends so that it can access everything in body. 
+// In head it is used when we are including outside libraries.
+
+// Selectors:-
+// 1. Query Selector (very Important) - through it we can the tags/elements using the tags or class/id names
+
+
+    // To console out
+    console.log(document.querySelector("h1")) // To get the first h1 tag
+    console.log(document.querySelectorAll("h1")) // To get all the h1 tags
+    console.log(document.querySelector(".second")); // using class name
+    console.log(document.querySelector("#para")); // using id name
+
+    // For manipulation, store it in a variable so that it can be used.
+    const firstHeading =  document.querySelectorAll("h1");
+    console.log(firstHeading);
+
+</script>
+    
+
+ </body>
+</html>
