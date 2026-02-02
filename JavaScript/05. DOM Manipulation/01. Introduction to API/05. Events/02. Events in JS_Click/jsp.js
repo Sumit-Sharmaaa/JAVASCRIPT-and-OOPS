@@ -2,7 +2,7 @@
 // 1st Way - Using Function Name
 
 const p = document.querySelector('p');
-p.addEventListener('click',clickPara1);  // addEventListener takes event and function/callback function.
+p.addEventListener('click',clickPara1);  // addEventListener takes 3 arguments - event, function/callback function, capture(not mandatory) in arguments.
 // just function name is used and it is not called like clickPara(), as doing it will execute it automatically even without clicking once the page loads. 
 
 

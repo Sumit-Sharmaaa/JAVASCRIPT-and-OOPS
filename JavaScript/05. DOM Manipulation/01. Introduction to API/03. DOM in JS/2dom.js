@@ -14,7 +14,7 @@
     console.log(document.getElementsByClassName('first')); //  // No need of . here
     console.log(document.getElementsByTagName('h3'));
 
-    // quey Selector is Widely used as it can get everything
+    // query Selector is Widely used as it can get everything
 
     // MANIPULATION 
 

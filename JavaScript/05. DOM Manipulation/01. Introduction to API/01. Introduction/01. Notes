@@ -43,7 +43,7 @@ So DOM Tree of Above HTML COde is:-
         |
     ___HTML____
    |           |
-Head           Body                 -----> DOM Tree of corresponding HTM
+Head           Body                 -----> DOM Tree of corresponding HTML
   |             |                   -----> Here every Element will be represented as Node or Object, for  
 Title       ____|____                       Manipulation using scripting langiage whenever reqd.        
            |    |    |
@@ -65,7 +65,7 @@ document.body.ChildNodes
 Above eg - [text,h1.first, text, p#para, text, div, text, commemnt, text, script, text]
 
 document.body.children
--->HTMLCollection i.e. all elements inside body (will ignore text or spaces)
+-->HTMLCollection i.e. all elements inside body (will ignore text or spaces in this one)
 Above Eg - HTMLCollection(4) [h1.first, p#para , div, script, para:p#para]
 
 document.body.firstChild
@@ -77,6 +77,9 @@ document.body.firstElementChild
 But this way is long way to access Elements using Nodes, Better way is to use Selectors
 
 // DOM Selectors
-Note:- We can write this Code quries anywhere i.e. in HTML code or JS code but inside script Tag or directly on console.
+Note:- We can write this Code quries anywhere i.e. in HTML code or JS code but inside script Tag when in HTML  or directly on console.
 Refer-> 02. index.html 
 
+
+Which property allows you to access the next sibling node of an element within the <body> element?
+Ans :-document.body.nextElementSibling
